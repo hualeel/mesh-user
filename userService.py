@@ -7,11 +7,6 @@ import request
 
 sidecarPort = 80
 
-
-def set_label(url):
-    header = "region=sh"
-    response = request.get(url.headers = header)
-
 class TodoHandler(BaseHTTPRequestHandler):
 
     def do_GET(self):
